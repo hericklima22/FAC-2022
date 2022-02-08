@@ -22,7 +22,7 @@ main:
 	
 	move $t0, $v0	# move o inteiro da entrada para o registrador v0
 		
-	li $v0, 4	# cahamda da cfunção print_str
+	li $v0, 4	# cahamda da função print_str
 	la $a0, str2    # carrega a string que vai ser imprimida
 	syscall		# imprime a string
 	
