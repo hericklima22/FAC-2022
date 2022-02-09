@@ -16,7 +16,7 @@ for:
 
 	addi $t0, $t0, 1	# incrementa 1 em t0
 	slti $t1, $t0, 16	# t1 = 1 se t0 < 10
-	bne $t1, $zero, for	# volta para for se t1 < 10
+	bne $t1, $zero, for	# se t1 for diferente de zero volta pro for
 
 	li $v0, 10
 	syscall
