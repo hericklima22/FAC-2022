@@ -36,31 +36,6 @@ main:
 		lb 	$t7, palavra($t2)			# carrega a letra contida em palavra[$t2]
 		
 		seq	$t4, $t6, $t7				# compara as letras e salva 1 ou 0 se igual ou falso em $t4
-		
-		#### DEBUG
-#		li 	$v0, 11
-#		move	$a0, $t6
-#		syscall
-#		
-#		li 	$v0, 11
-#		move	$a0, $t7
-#		syscall
-#		
-#		li 	$v0, 1				# chama a função print_int
-#		move 	$a0, $t4			# move o valor de $t4 para $a0
-#		syscall
-#		
-#		li 	$v0, 1
-#		move 	$a0, $t0
-#		syscall
-#		
-#		li $v0, 4
-#		la $a0, novaLinha
-#		syscall
-		####
-		
-		
-		
 		bne	$t6, $t7, fimLoop			# se as letras não forem iguais já pula pra fora do loop
 		
 		addi	$t1, $t1, 1				# incrementa o valor de $t1
